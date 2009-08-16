@@ -1,0 +1,6 @@
+Box2d:
+
+- Since Box2D uses a SOA, you should never new or malloc a body, shape, or joint.
+
+- Box2D is tuned for MetersKilogramsSeconds units. Keep the size of moving objects roughly between 0.1 and 10 meters. You'll need to use some scaling system when you render your environment and actors. The Box2D examples do this by using an OpenGL viewport transform.
+
