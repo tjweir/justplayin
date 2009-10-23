@@ -4,3 +4,4 @@ Box2d:
 
 - Box2D is tuned for MetersKilogramsSeconds units. Keep the size of moving objects roughly between 0.1 and 10 meters. You'll need to use some scaling system when you render your environment and actors. The Box2D examples do this by using an OpenGL viewport transform.
 
+- Recall that the world AABB should always be bigger then the region where your bodies are located. If bodies leave the world AABB, then they will be frozen. This is not a bug.
